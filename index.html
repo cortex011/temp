@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 </head>
 <body>
 
@@ -155,11 +156,27 @@
     <hr>
     <div class="sec_items">
             <div class="filial_item">
+                <div class="mySwiper swiper">
+                    <div class="swiper-wrapper">
+                            <div class="filial_img swiper-slide">
+                                <img src="img/13.jpg" alt="">
+                            </div>
 
-                <div class="filial_img">
-                    <img src="img/13.jpg" alt="">
-                </div>
+                            <div class="filial_img swiper-slide">
+                                <img src="img/11.jpg" alt="">
+                            </div>
+                            <div class="filial_img swiper-slide">
+                                <img src="img/13.jpg" alt="">
+                            </div>
 
+                            <div class="filial_img swiper-slide">
+                                <img src="img/11.jpg" alt="">
+                            </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                 </div>
                 <div class="filial_cont">
                     <div class="filial_title">
                         Nerimanov filialı
@@ -192,6 +209,24 @@
    </section>
 
 </body>
+
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 
 <script>
       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
