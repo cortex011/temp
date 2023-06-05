@@ -170,13 +170,19 @@ section{
     cursor: pointer;
     opacity: 0.8;
 }
+
+.filial_item:first-child{
+    margin-left: 0;
+}
 .filial_item{
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     box-shadow: -2px -1px 7px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: -2px -1px 7px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: -2px -1px 7px 0px rgba(0,0,0,0.75);
     flex: 1;
-    max-width: 400px;
+    margin-left: 10px;
+    max-width: 600px;
+    min-width: 400px;
 }
 
 .filial_img{
@@ -207,3 +213,39 @@ section{
     margin-right: 5px;
 }
 
+
+
+.contact_title{
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.contact_point{
+    display: flex;
+}
+
+.map_content{
+  
+    width: 50%;
+    height: 400px;
+}
+
+.contact_texts{
+    width: 50%;
+    padding: 20px;
+}
+
+.contact_item div:first-child{
+    font-size: 20px;
+    opacity: 0.5;
+}
+
+.contact_item {
+    padding: 10px;
+}
+.contact_item div:nth-child(2){
+    font-size: 30px;
+    opacity: 1;
+}
